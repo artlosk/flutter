@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'dart:math';
 
-import 'package:flutter/rendering.dart';
-
 void main() {
   runApp(MyApp());
 }
@@ -63,57 +61,68 @@ class _MyHomePageState extends State<MyHomePage>
     });
   }
 
+  void closeBottomSheet() {
+    if (_controller != null) {
+      _controller.close();
+      _controller = null;
+      setState(() {
+        isVisible = true;
+      });
+    }
+  }
+
   void toggleBottomSheet() {
     isVisible = false;
     if (_controller == null) {
-      _controller = scaffoldKey.currentState.showBottomSheet((context) =>
-          Container(
-              height: 200,
-              child: Padding(
-                  padding: EdgeInsets.only(
-                      left: 10.0, top: 50.0, right: 10.0, bottom: 0),
-                  child: Column(children: [
-                    Row(
-                      children: [
-                        Expanded(
-                            flex: 1,
-                            child: Container(
-                                child: Align(
-                                    alignment: Alignment.centerLeft,
-                                    child: Icon(Icons.wallet_giftcard)))),
-                        Expanded(
-                            flex: 1,
-                            child: Container(
-                                child: Align(
-                                    alignment: Alignment.centerLeft,
-                                    child: Text('Сумма')))),
-                        Expanded(
-                            flex: 3,
-                            child: Container(
-                                child: Align(
-                                    alignment: Alignment.centerRight,
-                                    child: Text('200 руб'))))
-                      ],
-                    ),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Padding(padding: EdgeInsets.only(top: 100)),
-                        RaisedButton(
-                            onPressed: () {
-                              _controller.close();
-                              _controller = null;
-                              setState(() {
-                                isVisible = true;
-                              });
-                            },
-                            child: Text('Оплатить')),
-                      ],
-                    )
-                  ]))));
+      _controller =
+          scaffoldKey.currentState.showBottomSheet((context) => GestureDetector(
+                child: Container(
+                    color: Colors.purple,
+                    height: 200,
+                    child: Padding(
+                        padding: EdgeInsets.only(
+                            left: 10.0, top: 50.0, right: 10.0, bottom: 0),
+                        child: Column(children: [
+                          Row(
+                            children: [
+                              Expanded(
+                                  flex: 1,
+                                  child: Container(
+                                      child: Align(
+                                          alignment: Alignment.centerLeft,
+                                          child: Icon(Icons.wallet_giftcard)))),
+                              Expanded(
+                                  flex: 1,
+                                  child: Container(
+                                      child: Align(
+                                          alignment: Alignment.centerLeft,
+                                          child: Text('Сумма')))),
+                              Expanded(
+                                  flex: 3,
+                                  child: Container(
+                                      child: Align(
+                                          alignment: Alignment.centerRight,
+                                          child: Text('200 руб'))))
+                            ],
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              Padding(padding: EdgeInsets.only(top: 100)),
+                              RaisedButton(
+                                  onPressed: () {
+                                    closeBottomSheet();
+                                  },
+                                  child: Text('Оплатить')),
+                            ],
+                          )
+                        ]))),
+                onVerticalDragUpdate: (d) {
+                  closeBottomSheet();
+                },
+              ));
     } else {
-      _controller.close();
-      _controller = null;
+      closeBottomSheet();
     }
   }
 
