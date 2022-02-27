@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Ivan",
+    "email": "ivan@gmail.com",
+    "avatar": "https://picsum.photos/1200/501"
+  },
+  {
+    "name": "Andrey",
+    "email": "andrey@gmail.com",
+    "avatar": "https://picsum.photos/1200/502"
+  },
+  {
+    "name": "Maksim",
+    "email": "maksim@gmail.com",
+    "avatar": "https://picsum.photos/1200/503"
+  },
+  {
+    "name": "Vitalik",
+    "email": "vitalik@gmail.com",
+    "avatar": "https://picsum.photos/1200/504"
+  },
+  {
+    "name": "Viktor",
+    "email": "viktor@gmail.com",
+    "avatar": "https://picsum.photos/1200/505"
+  },
+  {
+    "name": "Pavel",
+    "email": "pavel@gmail.com",
+    "avatar": "https://picsum.photos/1200/506"
+  },
+  {
+    "name": "Semen",
+    "email": "semen@gmail.com",
+    "avatar": "https://picsum.photos/1200/507"
+  },
+  {
+    "name": "Alex",
+    "email": "alex@gmail.com",
+    "avatar": "https://picsum.photos/1200/508"
+  },
+  {
+    "name": "Aleksandr",
+    "email": "aleksandr@gmail.com",
+    "avatar": "https://picsum.photos/1200/509"
+  },
+  {
+    "name": "Prokop",
+    "email": "prokop@gmail.com",
+    "avatar": "https://picsum.photos/1200/510"
+  }
+]

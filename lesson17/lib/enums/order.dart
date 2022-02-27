@@ -1,0 +1,1 @@
+enum Order {none, bought, waiting}
