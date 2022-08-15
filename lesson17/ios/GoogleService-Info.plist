@@ -3,9 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>476492475327-eutl9o0o53o3pp51r5j986otdm02pr5c.apps.googleusercontent.com</string>
+	<string>476492475327-fn0t7tro6671ko6jelm4op2q4tav00gp.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.476492475327-eutl9o0o53o3pp51r5j986otdm02pr5c</string>
+	<string>com.googleusercontent.apps.476492475327-fn0t7tro6671ko6jelm4op2q4tav00gp</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>476492475327-9lj1fks2ctjms6iepnjn0tf3o2hg0f2s.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyD-IFJebrScJ_x-2h4ZtIJxEbCEaCFsVVw</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.example.shoppinglist</string>
+	<string>com.loskutnikoff.shoppingList</string>
 	<key>PROJECT_ID</key>
 	<string>shoppinglist-34633</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,6 +31,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:476492475327:ios:9501583a5a6e6b05438f0a</string>
+	<string>1:476492475327:ios:54a1a060da0129df438f0a</string>
+	<key>DATABASE_URL</key>
+	<string>https://shoppinglist-34633-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

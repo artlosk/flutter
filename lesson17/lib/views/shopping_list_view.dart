@@ -68,6 +68,7 @@ class ShoppingListView extends StatelessWidget {
                   controller: _amountController,
                   decoration: const InputDecoration(hintText: 'Кол-во'),
                   keyboardType: TextInputType.number,
+                  maxLines: 2,
                   inputFormatters: <TextInputFormatter>[
                     FilteringTextInputFormatter.allow(RegExp(r'^\d*\.?\d{0,2}')),
                   ],
